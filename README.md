@@ -106,16 +106,11 @@ https://openweathermap.org/api
 
  📸 Screenshots
 
-> Add screenshots here after uploading them.
+![Home](screenshots/home.png)
 
-Example:
+![Dark theme](screenshots/dark-background.png)
 
-```
-screenshots/home.png
-
-screenshots/dark-background.png
-
-screenshots/light-backgrround.png
+![Light theme](screenshots/light-background.png)
 ```
 
  📈 Future Improvements
