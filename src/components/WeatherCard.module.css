@@ -1,0 +1,136 @@
+/* ==========================
+   Weather Card
+========================== */
+
+.card {
+  width: 100%;
+  max-width: 820px;
+  margin: 40px auto 0;
+  padding: 45px 35px;
+
+  border-radius: 30px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 20px 50px var(--glass-shadow);
+
+  text-align: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  animation: fadeUp 0.6s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 70px var(--glass-shadow);
+}
+
+.icon {
+  font-size: 130px;
+  color: var(--text-primary);
+  margin: -10px auto 0;
+  display: block;
+  filter: drop-shadow(0 6px 14px var(--glass-shadow));
+}
+
+/* ==========================
+   Temperature + Unit Toggle
+========================== */
+
+.tempRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.temperature {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.unitToggle {
+  padding: 6px 16px;
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+  cursor: pointer;
+
+  background: var(--glass-bg);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: transform 0.25s ease, color 0.2s ease;
+}
+
+.unitToggle:hover {
+  transform: translateY(-2px);
+  color: var(--text-primary);
+}
+
+.unitToggle:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 2px;
+}
+
+/* ==========================
+   City
+========================== */
+
+.city {
+  margin-top: 10px;
+  font-size: 46px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* ==========================
+   Description
+========================== */
+
+.description {
+  margin-top: 8px;
+  margin-bottom: 40px;
+  font-size: 22px;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+/* ==========================
+   Details Grid
+========================== */
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+  .card {
+    padding: 30px 20px;
+  }
+
+  .icon {
+    font-size: 100px;
+  }
+
+  .temperature {
+    font-size: 72px;
+  }
+
+  .city {
+    font-size: 34px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}

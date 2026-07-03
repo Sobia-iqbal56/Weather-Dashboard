@@ -1,0 +1,92 @@
+/* ==========================
+   Search History
+========================== */
+
+.historyContainer {
+  margin: 35px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h3 {
+  color: var(--text-primary);
+  font-size: 22px;
+  margin: 0;
+}
+
+.clearButton {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+
+  background: var(--glass-bg);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.25s ease;
+}
+
+.clearButton:hover {
+  background: var(--glass-border);
+  transform: translateY(-2px);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px 4px 18px;
+
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border-radius: 999px;
+  box-shadow: 0 8px 18px var(--glass-shadow);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chip:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 26px var(--glass-shadow);
+}
+
+.chipLabel {
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  padding: 10px 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.chipRemove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.chipRemove:hover {
+  background: var(--glass-border);
+  color: var(--text-primary);
+}

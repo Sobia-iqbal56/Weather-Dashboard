@@ -1,0 +1,41 @@
+.clockBox {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 16px 24px;
+  border-radius: 20px;
+
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 10px 30px var(--glass-shadow);
+  color: var(--text-primary);
+}
+
+.label {
+  margin: 0 0 4px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.time {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  /* keeps digits the same width so the ticking
+     seconds don't jiggle the layout every second */
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 1px;
+}
+
+.date {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 480px) {
+  .time {
+    font-size: 26px;
+  }
+}

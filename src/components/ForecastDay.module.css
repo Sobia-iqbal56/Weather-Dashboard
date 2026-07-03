@@ -1,0 +1,53 @@
+.day {
+  min-width: 100px;
+  padding: 16px 10px;
+  border-radius: 18px;
+  text-align: center;
+
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 20px var(--glass-shadow);
+
+  transition: transform 0.3s ease;
+  scroll-snap-align: start;
+}
+
+.day:hover {
+  transform: translateY(-4px);
+}
+
+.weekday {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.date {
+  margin: 2px 0 8px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.icon {
+  font-size: 42px;
+  color: var(--text-primary);
+}
+
+.temps {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.high {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.low {
+  color: var(--text-secondary);
+}

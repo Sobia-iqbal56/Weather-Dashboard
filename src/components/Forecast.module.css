@@ -1,0 +1,32 @@
+.forecastSection {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--glass-border);
+}
+
+.heading {
+  margin: 0 0 16px;
+  color: var(--text-primary);
+  font-size: 20px;
+  text-align: left;
+}
+
+/* Desktop: an even 5-column grid */
+.scrollRow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+/* Mobile: horizontal scroll instead of squishing 5 cards
+   into a tiny screen — scroll-snap makes it feel intentional,
+   like flicking through cards, not just an overflow accident */
+@media (max-width: 700px) {
+  .scrollRow {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 8px;
+    scroll-snap-type: x mandatory;
+  }
+}

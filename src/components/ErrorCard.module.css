@@ -1,0 +1,86 @@
+.card {
+  /* one named variable for the "error red" — change it here,
+     it updates everywhere in this file */
+  --error-accent: #ff6b6b;
+
+  margin: 35px auto;
+  padding: 28px;
+  max-width: 500px;
+
+  border-radius: 20px;
+  text-align: center;
+
+  background: rgba(255, 80, 80, 0.15);
+  border: 1px solid rgba(255, 80, 80, 0.35);
+  backdrop-filter: blur(12px);
+
+  animation: fadeIn 0.4s ease;
+}
+
+.icon {
+  font-size: 48px;
+  color: var(--error-accent);
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: var(--error-accent);
+}
+
+.card p {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.card small {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.retryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 18px;
+  padding: 10px 22px;
+
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  background: var(--error-accent);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+}
+
+.retryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(255, 80, 80, 0.35);
+}
+
+.retryButton:active {
+  transform: scale(0.97);
+}
+
+.retryButton:focus-visible {
+  outline: 2px solid var(--error-accent);
+  outline-offset: 2px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
