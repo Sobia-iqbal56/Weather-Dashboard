@@ -2,6 +2,10 @@
 
 A modern and responsive weather dashboard built with **React**, **Vite**, and the **OpenWeather API**. The application provides real-time weather information, location-based weather, search history, dynamic backgrounds, and a clean glassmorphism interface.
 
+## 🌐 Live Demo
+
+👉 **https://weather-dashboard-sobia.vercel.app/**
+
  ✨ Features
 
 - 🔍 Search weather by city name
